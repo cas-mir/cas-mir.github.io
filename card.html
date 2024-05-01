@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleVault</title>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="aos-master/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="line-awesome-1.3.0/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="design.css">
+    <style>
+
+      body{
+        background-color:white;
+      }
+
+      .color-over{
+        background-color:green;
+        opacity: 1;
+      }
+
+      .color-over:hover{
+        height:20%
+        opacity: 1;
+      }
+
+      .fullheight{
+       border-bottom:15px solid black;
+      }
+
+    .scrollable-images img,.dye-section .row div img:hover {
+      transform: scale(1.02);
+    }
+
+    .img-fluid{
+      transform: scale(1.02);
+    }
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+  height:84%;
+}
+
+.h2{
+            font-weight:bold;
+            color:green;
+            cursor: pointer;
+        }
+
+        .btn{
+            border: 1px solid black;
+            background-color:black;
+            color:white;
+        }
+
+        .btn:hover{
+            color:black;
+            background-color:green;
+            border:none;
+            transition: 1.7s ease;
+        }
+
+        .big-image button{
+          justify-content:center;
+        }
+
+        .lacoste p{
+            cursor:pointer;
+        }
+
+        .lacoste p:hover{
+            color:green;
+        }
+
+        .lacoste img{
+            width:100%;
+        }
+
+        .lacoste img:hover{
+            cursor:pointer;
+        }
+
+        #main-bar{
+            text-align:center;
+            background-color:silver;
+        }
+
+        .dye div p a,.dye-section .row p a{
+          color:black;
+        }
+
+        .dye div p a,.dye-section .row p a:hover{
+          color: #000080;
+          transition:1.2s ease;
+        }
+
+        .dye-section .row div img{
+          width:100%;
+          border-radius:5px;
+        }
+
+        footer{
+          background-color:#89CFF0;
+        }
+
+
+        footer a, .contact-p{
+          color:black;
+          cursor: pointer;
+          font-size:1.16rem;
+          font-weight:500;
+        }
+
+        footer a, .contact-p:hover{
+          color:#000080;
+        }
+
+        h5,strong{
+          color:green;
+        }
+        
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="navbar">
+
+  <header>
+
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+            <h2 class="fw-bolder ml-3 text-white h1" href="home.php">StyleVault</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse " aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <img src="img/vault2.png" alt="StyleVault" class="logo">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="home.php" class="nav-link">Home<i class="las la-store"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="shop.php" class="nav-link">Shop<i class="las la-shopping-bag"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Collections.php" class="nav-link">Collection<i class="las la-tshirt"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Cart.php" class="nav-link">Cart<i class="las la-shopping-cart"></i></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="about.php" class="nav-link">about<i class="lar la-question-circle"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- second navbar -->
+        <button class="navbar-toggler main-bar" type="button" data-toggle="collapse" data-target="#nav-collapse " aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <!-- <nav class="navbar navbar-expand-md" id="main-bar nav-collapse" style="background-color:#89CFF0;">
+        <ul class="navbar-nav pt-5">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">sign in</a>
+            </li>
+            
+            <li class="nav-item">
+                <a href="#" class="nav-link"><input type="text" name="search" id="search"></a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">shoe</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link">promo</a>
+            </li>
+
+        </ul>
+      </nav> -->
+    </header>   
+
+        <div class="container ">
+          <section class="">
+            <h1 class="h2 pt-4 mt-3">GET READY FOR SUMMER</h1>
+              <div class="row gy-5">
+                
+                <div class="col-lg-3 lacoste pt-3 image-container">
+                  <img src="Img/lac1.avif" alt="" ">
+                  <img class="hover-image" src="img/lac61.jpg" alt="Hover Image">
+                  <p class="h4 fw-bold">BEACH ACCESSORIES</p>
+                  <button class="btn">ALL THE PIECES</button>
+                </div>
+              
+              
+                <div class="col-lg-3 lacoste pt-3 image-container">
+                  <img src="Img/lac9.avif" alt="">
+                  <img class="hover-image" src="img/lac2.webp" alt="Hover Image">
+                  <p class="h5 fw-bold">SWIM WEARS</p>
+                  <button class="btn">ALL THE PIECES</button>
+                </div>
+
+                <div class="col-lg-3 lacoste pt-3 image-container">
+                  <img src="Img/lac3.webp" alt="">
+                  <img class="hover-image" src="img/lac10.jpg" alt="Hover Image">
+                  <p class="h5 fw-bold">SUMMER FOOTWEARS</p>
+                  <button class="btn">ALL THE PIECES</button>
+                </div>
+
+                <div class="col-lg-3 lacoste pt-3 image-container">
+                  <img src="Img/lac5.avif" alt="">
+                  <img class="hover-image" src="img/lac4.webp" alt="Hover Image">
+                  <p class="h5 fw-bold">SUNSHINE WARDROBE</p>
+                  <button class="btn">ALL THE PIECES</button>
+                </div>
+
+              </div>
+         </section>
+        </div>
+
+    <div class="container-fluid pt-5 mt-3" style="background-color: #89CFF0;">
+          <h1 class="h2 text-center">NATURAL DYE COLLECTION</h1>
+          <p class="h5 text-center">Discover organic cotton pieces dyed with natural pigments. Their unique,</p>
+          <p class="h5 text-center"> luminous colours are as if they have been sun-dyed</p>
+      <div class="row pt-4 mt-3">
+      <div class="col-md-6">
+        <!-- Big image taking half of the screen -->
+        <img src="img/dye1.avif" class="img-fluid mb-2" alt="Big Image" style="height:91.2%;">
+      </div>
+      <div class="col-md-6 scrollable-images" id="scrollableImages">
+        <!-- Scrollable smaller images -->
+        <div class="row dye">
+          <div class="col-md-6">
+            <img src="img/dye2.avif" class="img-fluid mb-2 fixed" alt="Small Image 1">
+            <p class="h5 mb-4 text-center"><a href="#">Unisex Lacoste Organic Silk Cap</a></p>
+            <!-- <p class="mb-2 h5 text-center"></p> -->
+          </div>
+          <div class="col-md-6">
+            <img src="img/dye3.webp" class="img-fluid mb-2" alt="Small Image 2">
+            <p class="h5 mb-4 text-center"><a href="#">Natural Dyed Jersey T-Shirt</a></p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/dye4.avif" class="img-fluid mb-2" alt="Small Image 1">
+            <p class="h5 mb-4 text-center"><a href="#">Loose Fit Natural Dye Jogger</a></p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/dye5.webp" class="img-fluid mb-2" alt="Small Image 2">
+            <p class="h5 mb-4 text-center"><a href="#">Relaxed Fit Washed Effect Elastic Bermuda Shorts</a></p>
+          </div>
+          
+          <!-- Add more small images here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container dye-section pt-5">
+
+          <h1 class="h2 text-center mb-4 fw-bold">FITS>></h1>
+    <section class="row">
+      <div class="col-lg-3">
+        <img src="img/dsec1.avif" alt="">
+        <p class="h5 mb-3"><a href="#">Classic Cotton Piquḕ Polo Shirt</a></p>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="img/dsec2.avif" alt="">
+        <p class="h5 mb-3"><a href="#">Relaxed Fit Washed Effect Popplin Shirt</a></p>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="img/dsec3.avif" alt="">
+        <p class="h5 mb-3"><a href="#">Natural Dyed Cotton Piquḕ Polo T-Shirt</a></p>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="img/dsec4.webp" alt="">
+        <p class="h5 mb-3"><a href="#">Oversized Natural Dyed Fleece Hoodie</a></p>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="img/dsec5.avif" alt="">
+        <p class="h5 mb-3"><a href="#">Natural Dyed Jogger Track Pants</a></p>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="img/dsec6.avif" alt="">
+        <p class="h5 mb-3"><a href="#">Natural Dyed Cotton Fleece T-Shirt</a></p>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="img/dsec7.avif" alt="">
+        <p class="h5 mb-3"><a href="#">Natural Dyed Cotton Fleece Shorts</a></p>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="img/dsec8.avif" alt="">
+        <p class="h5 mb-3"><a href="#">Loose Fit Natural Dye Jogger Sweatshirt</a></p>
+      </div>
+
+    </section>
+  </div>
+
+  <div class="container-fluid pt-5 mt-3" style="background-color: #89CFF0;">
+          <h1 class="h2 text-center">SUMMER SHOES</h1>
+          <p class="h5 text-center">From Flip-flops to Heels to Sneakers, summer is all about light footwear. </p>
+          <p class="h5 text-center">Somewhere between fashion and sport.</p>
+      <div class="row pt-4 mt-3">
+
+      <div class="col-md-6 scrollable-images" id="scrollableImages">
+        <!-- Scrollable smaller images -->
+        <div class="row dye">
+          <div class="col-md-6">
+            <img src="img/dshoe1.webp" class="img-fluid mb-2 fixed" alt="Small Image 1">
+            <p class="h5 mb-4 text-center"><a href="#">Unisex Lacoste Organic Silk Cap</a></p>
+            <!-- <p class="mb-2 h5 text-center"></p> -->
+          </div>
+          <div class="col-md-6">
+            <img src="img/dshoe2.webp" class="img-fluid mb-2" alt="Small Image 2">
+            <p class="h5 mb-4 text-center"><a href="#">Natural Dyed Jersey T-Shirt</a></p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/dshoe3.webp" class="img-fluid mb-2" alt="Small Image 1">
+            <p class="h5 mb-4 text-center"><a href="#">Loose Fit Natural Dye Jogger</a></p>
+          </div>
+          <div class="col-md-6">
+            <img src="img/dshoe4.webp" class="img-fluid mb-2" alt="Small Image 2">
+            <p class="h5 mb-4 text-center"><a href="#">Relaxed Fit Washed Effect Elastic Bermuda Shorts</a></p>
+          </div>
+          
+          <!-- Add more small images here -->
+        </div>
+      </div>
+      <div class="col-md-6">
+       
+        <!-- Big image taking half of the screen -->
+        <img src="img/dshoe5.avif" class="img-fluid mb-2 big-image" alt="Big Image" style="height:91.2%;">
+        <div class="row justify-content-center pt-2">
+        <button class="btn">ALL THE PIECES</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+          <div class="container dye-section pt-5">
+
+          <h1 class="h2 text-center mb-4 fw-bold">FITS>></h1>
+          <section class="row">
+          <div class="col-lg-3">
+          <img src="img/shoe1.avif" alt="">
+          <p class="h5 mb-3"><a href="#">Men's LOO3 2K24 Trainers</a></p>
+          </div>
+
+          <div class="col-lg-3">
+          <img src="img/shoe2.avif" alt="">
+          <p class="h5 mb-3"><a href="#">Women's LOO3 2K24 Trainers</a></p>
+          </div>
+
+          <div class="col-lg-3">
+          <img src="img/shoe3.avif" alt="">
+          <p class="h5 mb-3"><a href="#">Women's LOO3 Neoand Leather Trainers</a></p>
+          </div>
+
+          <div class="col-lg-3">
+          <img src="img/shoe4.avif" alt="">
+          <p class="h5 mb-3"><a href="#">Men's Lineshot Leather Logo Trainers</a></p>
+          </div>
+
+          <div class="col-lg-3">
+          <img src="img/shoe5.avif" alt="">
+          <p class="h5 mb-3"><a href="#">Juniors' Serve Slides 1.0</a></p>
+          </div>
+
+          <div class="col-lg-3">
+          <img src="img/shoe6.avif" alt="">
+          <p class="h5 mb-3"><a href="#">Men's Serve Slides Dual</a></p>
+          </div>
+
+          <div class="col-lg-3">
+          <img src="img/shoe7.avif" alt="">
+          <p class="h5 mb-3"><a href="#">Women's Serve Slides 2.0</a></p>
+          </div>
+
+          <div class="col-lg-3">
+          <img src="img/shoe8.jpg" alt="">
+          <p class="h5 mb-3"><a href="#">Men's Branded Serve Slides 2.0</a></p>
+          </div>
+
+          </section>
+          </div>
+  </div>
+
+  <footer class="pb-4 pt-5">
+    <div class="container text-md-left text-center">
+      <div class="row text-center text-md-left">
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 fw-bold h4">&lt;StyleVault&gt;</h5>
+          <p>john john john john john john john john john john john v v john</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-2 fw-bold">Products</h5>
+          <p><a href="#"style="text-decorations:none;">Street Wears</a></p>
+          <p><a href="#"style="text-decorations:none;">Dye Collection</a></p>
+          <p><a href="#"style="text-decorations:none;">Shoes</a></p>
+          <p><a href="#"style="text-decorations:none;">Slides etc.</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-2 fw-bold">Social Links</h5>
+          <p><a href="https://www.upwork.com/nx/find-work/best-matches"style="text-decorations:none;">UpWork</a></p>
+          <p><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGFz37cIpUO9wAAAY8mJVVgByRgEHqxY4xLJc2rpln-tpl5d6x9sV9Ushz8cfDnuJWDrguaxzXm8nJWqBAUlzyuR7g3FELudGuWFuc_rO3sMGXPFmcRBnMP_t1tWxkpb4IS8uQ=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fcasmir-nnamani-1933aa2a9%2F"style="text-decorations:none;">LinkedIn</a></p>
+          <p><a href="https://www.youtube.com/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ"style="text-decorations:none;">Programes</a></p>
+        </div>
+      
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto">
+        <h5 class="text-uppercase mb-2 mt-2 fw-bold">Contact</h5>
+        <p class="contact-p">
+          <i class="las la-map-marker-alt mr-3"></i>Ikorodu,Lagos.
+        </p>
+        <p class="contact-p" href="https://mail.google.com/mail/u/0/#inbox">
+          <i class="las la-envelope-open-text mr-3"></i>Casmir1108@gmail.com
+        </p>
+        <p class="contact-p">
+          <i class="las la-phone mr-3"></i>+234 9073235631
+        </p>
+      </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+
+        <div class="col-md-7 col-lg-8">
+          <p class="h5">Copyright <i class="las la-copyright"></i> 2024 All Rights Reserved by:
+          <a href="#" style="text-decoration:none;">
+            <strong class="h5">The Providers</strong>        
+          </a>
+          </p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white h1" style="font-size:23px;"><i class="lab la-instagram"></i></a>
+              </li>
+
+              <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="lab la-twitter"></i></a>
+              </li>
+
+              <li class="list-inline-item">
+              <a href="#" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="lab la-facebook"></i></a>
+              </li>
+
+              <li class="list-inline-item">
+              <a href="https://icons8.com/line-awesome" class="btn-floating btn-sm text-white" style="font-size:23px;"><i class="lab la-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
